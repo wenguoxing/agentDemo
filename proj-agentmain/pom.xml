@@ -2,20 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>agentDemo</artifactId>
+        <groupId>cn.com.agent</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../agentDemo/pom.xml</relativePath>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.com.agent</groupId>
-    <artifactId>agentDemo</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>proj-premain</module>
-        <module>proj-agentmain</module>
-        <module>myagent-core</module>
-        <module>myagent-package</module>
-        <module>myagent-starter</module>
-        <module>myagent-starter-test</module>
-    </modules>
+    <artifactId>proj-agentmain</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -29,6 +24,14 @@
             <groupId>org.apache.bcel</groupId>
             <artifactId>bcel</artifactId>
             <version>6.7.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.8</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/../lib/tools.jar</systemPath>
         </dependency>
     </dependencies>
 

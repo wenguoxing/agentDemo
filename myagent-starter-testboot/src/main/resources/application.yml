@@ -1,0 +1,4 @@
+server:
+  port: 8080
+myagent:
+  basepackage: cn.com.agent.controller,cn.com.agent.dao

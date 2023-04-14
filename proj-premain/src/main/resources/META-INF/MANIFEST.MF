@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: Administrator
+Created-By: Apache Maven 4.0.0-alpha-4
+Build-Jdk: 1.8.0_202
+Premain-Class: cn.com.agent.MyPremain
+Agent-Class: cn.com.agent.MyAgentMain
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+
